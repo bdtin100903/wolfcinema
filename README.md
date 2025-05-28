@@ -1,2 +1,3 @@
-# wolfcinema
+# WOLFCINEMA
 Website được viết bằng code thuần PHP, HTML, ....
+Sửa mục connectDB.php để config lại DB 
