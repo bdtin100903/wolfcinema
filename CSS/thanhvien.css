@@ -1,0 +1,22 @@
+nav{
+    background-color: #131E28;
+    color: aliceblue;
+}
+.container{
+    width: 80%;
+}
+#header{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 20px #dc3d24;
+}
+
+#content-img{
+    
+}
+.container li{
+    padding-left: 20px;
+}
+.container p{
+    font-size: 17px;
+}

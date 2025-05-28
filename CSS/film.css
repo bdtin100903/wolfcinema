@@ -1,0 +1,364 @@
+
+.movie{
+    
+    color: white;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.movie-img{
+    
+    width: 330px;
+    border: 4px solid rgba(255, 246, 246, 0.44);
+    box-shadow: 0px 0px 7px rgb(251 251 251 / 54%);
+}
+.movie-content{
+    height: 100%;
+    width: 404px;
+    padding-left: 20px;
+    background-color: #664F3C;
+    box-shadow: 3px 3px 1px #e3ae57;
+    border-radius: 40px;
+}
+#header{
+    text-shadow: 0px 0px 20px #dc3d24;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+#mota{
+    font-size: 15px;
+}
+#noidung{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border-top-left-radius: 10px;
+    background-color: rgba(39, 31, 45, 0.26);
+    border-bottom-right-radius: 10px;
+   
+    padding-left: 13px;
+}
+#thoiluong{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border-top-left-radius: 10px;
+    background-color: rgba(39, 31, 45, 0.26);
+    border-bottom-right-radius: 10px;
+   
+    padding-left: 13px;
+}
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    width: 347px;
+}
+#trailer{
+    background-color: red;
+    height: 47px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 20px;
+    box-shadow: -5px -5px 0px 1px #232b2b;
+    text-decoration: none;
+    transition: all 500ms cubic-bezier(0.86, 1.59, 0, 1.4);
+    width: 140px;
+    color: white;
+}
+
+#trailer:hover{
+    background-color: #e7df4bd1;
+    color: black;
+
+}
+#trailer-img{
+    height: 50px;
+    width: 50px;
+}
+#datve-img{
+    height: 40px;
+    width: 60px;
+}
+  
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  .modal-body {
+    position: relative;
+    padding: 0px;
+  }
+  .btn-close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+  }
+
+/* --------------- WARNING :)) ------------------ */
+/* --------------- WARNING :)) ------------------ */
+/* --------------- WARNING :)) ------------------ */
+
+.container {
+    width: 100%;
+  /* max-width: 1200px;
+  margin-top: 50px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; */
+}
+
+.title {
+  font-size: 45px;
+  color: #d9d9d9;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.panels.panel-default {
+  padding: 0 15px;
+}
+
+.relative {
+  position: relative;
+}
+
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-evenly;
+}
+
+.panel-heading {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60px;
+  background-color: transparent;
+  border-radius: 4px;
+
+  cursor: pointer;
+  font-size: 28px;
+  border: 2px solid #fff;
+  color: #000;
+  border-radius: 4px;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+}
+
+.panel-title {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.panel-heading:after {
+  content: "\27AD";
+  color: rgb(0, 0, 0);
+  top: calc(50% - 19px);
+  right: 20px;
+  position: absolute;
+  transition: all 0.3s ease;
+  transform-origin: 10px 19px;
+}
+
+.panel-heading.change_icon::after {
+  content: "\27AD";
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+}
+.panel-body__list {
+
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.panel-body__list li {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  font-size: 12px;
+  background-color: #ffd564;
+  padding: 9px 15px 8px 14px;
+  margin: 5px 16px 5px 0;
+  cursor: pointer;
+
+}
+.panel-body__list li:hover{
+  background-color: red;
+}
+.panel-bo
+/* .panels .panel-collapse {
+  position: relative;
+  overflow-y: auto;
+  max-height: 0;
+  transition: max-height 0.3s ease, margin-bottom 0.2s ease-in;
+} */
+
+.panel-collapse.collapse {
+  max-height: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+}
+.date{
+
+  margin-left: 60px;
+  width: 300px;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 4px;
+  line-height: 21px;
+  letter-spacing: 1.2px;
+  position: relative;
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0 10px 30px #444444;
+}
+.danhsachfilm {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  color: white
+}
+
+.danhsachfilm li {
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: white;
+}
+
+.showthongtinfilm {
+  display: none;
+  padding: 10px;
+  border: 10px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* CSS để làm đẹp cho thông tin phim */
+.movie-details {
+  background-color: #f9f9f9;
+
+}
+
+/* CSS cho ngày chiếu */
+.release-date {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* CSS cho danh sách giờ chiếu */
+.showtimes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* CSS cho mỗi giờ chiếu */
+.showtime {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 5px;
+}
+
+.video {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  display: block;
+  border: none;
+}
+.popup-btn,
+.close-btn {
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin: 50px auto;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: white;
+}
+.popup-btn:hover {
+  color: white;
+  background-color: black;
+}
+.video-popup {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  boxshadow: 10px 10px 10px 10px black;
+}
+.popup-bg {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.popup-content {
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: auto;
+}
+.popup-title {
+  padding: 30px;
+  margin: 0 auto;
+  color: red;
+  text-transform: uppercase;
+}
+
+
+

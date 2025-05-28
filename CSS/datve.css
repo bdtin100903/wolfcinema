@@ -1,0 +1,21 @@
+.selected-seat{
+    background : red;
+  }
+input[type="checkbox"]{
+    display: none;
+
+  }
+.seats{
+    display: flex;
+}
+.seat{
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+    border: 2px solid ;
+    border-radius: 11px;
+    padding: 9px;
+}
+#button{
+    border: 2px solid red;
+}

@@ -1,0 +1,43 @@
+<?php
+include("./connectDB/connectDB.php");
+$nameERR = $describeERR = $genreERR = $caseERR = $timeERR = $priceERR = "";
+$name = $describe = $genre = $case = $time = $price ="";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $describe = $_POST["describe"];
+    $img = $_FILES['img']['name'];
+
+    //CHECK CONNECT
+    /*if(empty($conn)){
+        echo"ERROO";
+    }
+    else echo"SUCCESS";*/
+    //Up ảnh film đang chiếu 
+    $target_dir = "../Image/tintuc/";
+    $target_file = $target_dir . basename($_FILES['img']['name']);
+    move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
+    //INPUT DATA
+
+    //input time
+    
+    //NO_NULL
+    if ($name == null || $describe == null ) {
+        if($name == null) {
+            $nameERR = 'Bạn chưa nhập tên ';
+        }
+        if($describe == null) {
+            $describeERR = 'Bạn chưa nhập mô tả';
+        }
+    } else {
+        $sql = "INSERT INTO promotion (img, name, describepro) 
+        VALUES ('$img', '$name', '$describe')";
+        $result = mysqli_query($conn, $sql);
+        $name = $describe ="";
+        echo '<script>alert("Thêm thành công")</script>';
+    }
+
+
+}
+?><?php
+include("footer.php");
+?>
